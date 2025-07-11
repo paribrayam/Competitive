@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <com.example.myapplication.PixelArtView
+        android:id="@+id/pixelArtView"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnColorRed"
+            style="@style/RoundedButton"
+            android:layout_width="57dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="8dp"
+            android:text="rojo"
+            android:textSize="8sp" />
+
+        <Button
+            android:id="@+id/btnColorGreen"
+            style="@style/RoundedButton"
+            android:layout_width="68dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:text="verde"
+            android:textSize="8sp" />
+
+        <Button
+            android:id="@+id/btnColorBlue"
+            style="@style/RoundedButton"
+            android:layout_width="58dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:text="azul"
+            android:textSize="8sp" />
+
+        <Button
+            android:id="@+id/btnColorBlack"
+            style="@style/RoundedButton"
+            android:layout_width="62dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:text="negro"
+            android:textSize="8sp" />
+
+        <Button
+            android:id="@+id/btnColorPicker"
+            android:layout_width="46dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:text="🎨" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textGridSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tamaño de la cuadrícula: 16x16"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+    <SeekBar
+        android:id="@+id/seekBarGridSize"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:max="24"
+        android:progress="8" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnNewCanvas"
+            style="@style/RoundedButton"
+            android:layout_width="71dp"
+            android:layout_height="40dp"
+            android:text="Nuevo lienzo"
+            android:textSize="8sp"
+            android:layout_marginRight="8dp" />
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/RoundedButton"
+            android:layout_width="71dp"
+            android:layout_height="40dp"
+            android:text="Limpiar"
+            android:textSize="8sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/formatSelectorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formato: "
+            android:textSize="16sp"/>
+        <RadioGroup
+            android:id="@+id/radioGroupFormat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radioPng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PNG"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/radioJpeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JPEG"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+</LinearLayout> 

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_yellow_light">
+
+    <!-- Barra de herramientas superior -->
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@color/green_yellow_primary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_pen"
+            style="@style/ToolButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="✏️"
+            android:textSize="20sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_eraser"
+            style="@style/ToolButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="🧽"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/green_yellow_dark"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_red"
+            style="@style/ColorButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:backgroundTint="#FF0000" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_blue"
+            style="@style/ColorButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:backgroundTint="#0000FF" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_green"
+            style="@style/ColorButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:backgroundTint="#00FF00" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_black"
+            style="@style/ColorButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:backgroundTint="#000000" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/green_yellow_dark"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_clear"
+            style="@style/ToolButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="🗑️"
+            android:textSize="20sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_undo"
+            style="@style/ToolButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="↶"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!-- Canvas de dibujo -->
+    <com.example.myapplication.DrawingView
+        android:id="@+id/drawing_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/bottom_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Barra inferior -->
+    <LinearLayout
+        android:id="@+id/bottom_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/green_yellow_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save"
+            style="@style/RoundedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Guardar"
+            android:textSize="16sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_back"
+            style="@style/AnswerButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Volver"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout> 

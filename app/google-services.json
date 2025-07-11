@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "367556674466",
+    "project_id": "geoquiz-effbd",
+    "storage_bucket": "geoquiz-effbd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367556674466:android:83005411cdee303bc5a8fb",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxtM4j_AvnIAmsE3DbnE8Y7codsDXhag8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

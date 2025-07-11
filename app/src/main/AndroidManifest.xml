@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permisos para Bluetooth -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    
+    <!-- Permisos para guardar dibujos -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    
+    <!-- Permisos para navegador web -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/iconoapp"
+        android:label="GeoQuiz"
+        android:roundIcon="@drawable/iconoapp"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MyApplication"
+            android:label="GeoQuiz">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="GeoQuiz" />
+            
+        <activity
+            android:name=".BluetoothGameActivity"
+            android:exported="false"
+            android:label="Juego Bluetooth"
+            android:screenOrientation="portrait" />
+            
+        <activity
+            android:name=".WaitingRoomActivity"
+            android:exported="false"
+            android:label="Sala de Espera"
+            android:screenOrientation="portrait" />
+            
+        <activity
+            android:name=".OnlineGameActivity"
+            android:exported="false"
+            android:label="Juego Online"
+            android:screenOrientation="portrait" />
+            
+        <activity
+            android:name=".ChestActivity"
+            android:exported="false"
+            android:label="Cofre Misterioso"
+            android:screenOrientation="portrait" />
+            
+        <activity
+            android:name=".PrivacyPolicyActivity"
+            android:exported="false"
+            android:label="Política de Privacidad"
+            android:screenOrientation="portrait" />
+            
+        <activity
+            android:name=".StudentToolsActivity"
+            android:exported="false"
+            android:label="Herramientas para Estudiantes"
+            android:screenOrientation="portrait" />
+            
+        <activity
+            android:name=".CalculatorActivity"
+            android:exported="false"
+            android:label="Calculadora"
+            android:screenOrientation="portrait" />
+            
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="false"
+            android:label="Calendario"
+            android:screenOrientation="portrait" />
+            
+        <activity
+            android:name=".DrawingActivity"
+            android:exported="false"
+            android:label="Pizarra de Dibujo"
+            android:screenOrientation="portrait" />
+            
+        <activity
+            android:name=".WebBrowserActivity"
+            android:exported="false"
+            android:label="Navegador Web"
+            android:screenOrientation="portrait" />
+            
+        <activity
+            android:name=".TranslatorActivity"
+            android:exported="false"
+            android:label="Google Traductor"
+            android:screenOrientation="portrait" />
+            
+        <activity
+            android:name=".GeminiActivity"
+            android:exported="false"
+            android:label="Google Gemini"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".PixelArtActivity"
+            android:exported="false"
+            android:label="Pixel Art"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".BluetoothPairingActivity"
+            android:exported="false"
+            android:label="Emparejamiento Bluetooth"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".GalleryActivity"
+            android:exported="false"
+            android:label="Galería de Geodas"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".GeodeRewardActivity"
+            android:exported="false"
+            android:label="Recompensa de Geoda"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".RangosActivity"
+            android:exported="false"
+            android:label="Rangos"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".AjustesActivity"
+            android:exported="false"
+            android:label="Ajustes"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

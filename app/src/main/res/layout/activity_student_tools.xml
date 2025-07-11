@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_yellow_light">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Herramientas para Estudiantes"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/green_yellow_dark"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintBottom_toTopOf="@id/btn_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📚 HERRAMIENTAS DE ESTUDIO OFFLINE"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/green_yellow_dark"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Anki - Tarjetas de estudio\n• Forest - Enfoque y productividad\n• Microsoft Office (Word, Excel, PowerPoint)\n• Google Docs (modo offline)\n• Notion (sincronización offline)\n• Evernote (notas offline)\n• OneNote - Notas digitales\n• Quizlet - Flashcards offline\n• Khan Academy (descargas)\n• Coursera (cursos offline)\n• Duolingo (lecciones offline)\n• Grammarly (modo offline)\n• Wolfram Alpha (calculadora científica)\n• GeoGebra (matemáticas)\n• Photomath (resolver problemas)\n• CamScanner (escanear documentos)\n• Adobe Acrobat Reader\n• Calendario offline\n• Calculadora científica\n• Cronómetro/Pomodoro"
+                android:textSize="14sp"
+                android:textColor="@color/green_yellow_dark"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎯 PRODUCTIVIDAD"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/green_yellow_dark"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Todoist (tareas offline)\n• Trello (tableros offline)\n• Asana (proyectos offline)\n• Microsoft To Do\n• Google Keep\n• Notion (mencionado arriba)\n• Obsidian (notas enlazadas)\n• Roam Research\n• Bear (notas elegantes)\n• Simplenote\n• Workflowy (listas)\n• Dynalist\n• Milanote (organizador visual)\n• Miro (mapas mentales offline)\n• XMind (mapas mentales)\n• MindMeister\n• Lucidchart (diagramas)\n• Draw.io (diagramas gratis)"
+                android:textSize="14sp"
+                android:textColor="@color/green_yellow_dark"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📖 LECTURA Y REFERENCIA"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/green_yellow_dark"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Kindle (libros electrónicos)\n• Google Play Books\n• Apple Books\n• PDF Reader\n• Adobe Acrobat\n• Foxit Reader\n• Sumatra PDF\n• Calibre (gestor de libros)\n• Goodreads (seguimiento)\n• Pocket (artículos offline)\n• Instapaper\n• Feedly (RSS offline)\n• Wikipedia (descarga completa)\n• Britannica (enciclopedia)\n• Dictionary.com\n• Merriam-Webster\n• Urban Dictionary\n• Thesaurus.com\n• Bible apps offline\n• Quran apps offline"
+                android:textSize="14sp"
+                android:textColor="@color/green_yellow_dark"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎵 AUDIO Y MULTIMEDIA"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/green_yellow_dark"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Spotify (descargas)\n• Apple Music (offline)\n• YouTube Music (offline)\n• Audible (audiolibros)\n• LibriVox (audiolibros gratis)\n• Podcast Addict\n• Pocket Casts\n• Overcast\n• Anchor (crear podcasts)\n• GarageBand (música)\n• FL Studio Mobile\n• BandLab\n• Voice Recorder\n• Otter.ai (transcripción)\n• Rev (transcripción)\n• Loom (grabar pantalla)\n• Screencast-O-Matic\n• Camtasia\n• Snapseed (editar fotos)\n• Canva (diseño offline)"
+                android:textSize="14sp"
+                android:textColor="@color/green_yellow_dark"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔧 UTILIDADES"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/green_yellow_dark"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Google Translate (offline)\n• DeepL Translator\n• Microsoft Translator\n• Grammarly\n• Hemingway Editor\n• ProWritingAid\n• Ginger Writer\n• LanguageTool\n• TextExpander\n• Alfred (macOS)\n• AutoHotkey (Windows)\n• Keyboard Maestro\n• IFTTT (automatización)\n• Zapier\n• Shortcuts (iOS)\n• Tasker (Android)\n• Automate\n• MacroDroid\n• LastPass (gestor contraseñas)\n• 1Password\n• Bitwarden\n• KeePass"
+                android:textSize="14sp"
+                android:textColor="@color/green_yellow_dark"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💡 CONSEJOS DE USO"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/green_yellow_dark"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Descarga contenido cuando tengas WiFi\n• Usa el modo avión para concentrarte\n• Organiza tus herramientas por categorías\n• Sincroniza regularmente cuando tengas conexión\n• Mantén tu dispositivo actualizado\n• Usa herramientas que funcionen sin internet\n• Crea backups de tu trabajo importante\n• Aprovecha las funciones offline de apps populares"
+                android:textSize="14sp"
+                android:textColor="@color/green_yellow_dark"
+                android:lineSpacingExtra="2dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_back"
+        style="@style/AnswerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout> 

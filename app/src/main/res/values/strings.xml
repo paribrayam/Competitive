@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="bluetooth_competition">Competir por Bluetooth</string>
+    <string name="start_hosting">Iniciar como Host</string>
+    <string name="join_game">Unirse al Juego</string>
+    <string name="waiting_for_opponent">Esperando oponente...</string>
+    <string name="question">Pregunta</string>
+    <string name="answer">Responder</string>
+    <string name="correct_answer">¡Respuesta Correcta!</string>
+    <string name="wrong_answer">Respuesta Incorrecta</string>
+    <string name="you_won">¡Ganaste!</string>
+    <string name="you_lost">Perdiste</string>
+    <string name="score">Puntuación: %1$d/10</string>
+    <string name="opponent_score">Oponente: %1$d/10</string>
+    <string name="enable_bluetooth">Habilitar Bluetooth</string>
+    <string name="bluetooth_required">Se requiere Bluetooth para jugar</string>
+    <string name="create_online_room">Crear sala online</string>
+    <string name="join_online_room">Unirse a sala online</string>
+    <string name="room_code_hint">Código de sala</string>
+    <string name="room_created">Sala creada. Código: %1$s</string>
+    <string name="room_joined">Unido a la sala</string>
+    <string name="room_not_found">Sala no encontrada</string>
+    <string name="room_full">La sala ya tiene dos jugadores</string>
+    <string name="opponent_joined">¡Oponente unido!</string>
+    <string name="game_started">¡Juego iniciado!</string>
+</resources>

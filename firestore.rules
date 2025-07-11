@@ -1,0 +1,15 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /rooms/{roomId} {
+      // Permitir crear la sala si el usuario autenticado es el host
+      allow create: if request.auth != null && request.resource.data.host.uid == request.auth.uid;
+      // Permitir leer/escribir si es host o guest
+      allow read, update, delete: if request.auth != null &&
+        (
+          (resource.data.host.uid == request.auth.uid) ||
+          (resource.data.guest != null && resource.data.guest.uid == request.auth.uid)
+        );
+    }
+  }
+} 
