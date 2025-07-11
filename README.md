@@ -140,8 +140,8 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 
 ## Contacto
 
-- **Desarrollador**: Bryan Parra
-- **Email**: [Tu email]
+- **Desarrollador**: Brayam Pari
+- **Email**: [paribrayam71@gmail.com]
 - **GitHub**: [https://github.com/paribrayam](https://github.com/paribrayam)
 
 ## Changelog
